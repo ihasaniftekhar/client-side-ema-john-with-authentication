@@ -11,7 +11,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://stark-gorge-68202.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
